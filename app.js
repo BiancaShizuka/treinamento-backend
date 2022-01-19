@@ -10,6 +10,8 @@ app.use(bodyParser.urlencoded({
     extended:true
 }));
 
+app.use('/itens',require('./src/routers/itens'));
+
 const port = process.env.PORT || 8090;
 
 app.get("/imalive",function(req,res){
